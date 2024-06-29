@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ReactAtsiskaitymas/static/css/main.4f8b5689.css",
+    "main.js": "/ReactAtsiskaitymas/static/js/main.3d2fd938.js",
+    "index.html": "/ReactAtsiskaitymas/index.html",
+    "main.4f8b5689.css.map": "/ReactAtsiskaitymas/static/css/main.4f8b5689.css.map",
+    "main.3d2fd938.js.map": "/ReactAtsiskaitymas/static/js/main.3d2fd938.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4f8b5689.css",
+    "static/js/main.3d2fd938.js"
+  ]
+}
