@@ -1,0 +1,27 @@
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__delete{
+        position: relative;
+        right: 100px;
+        bottom: 20px;
+        background-color: crimson;
+        width: 100px;
+        height: 100px;
+        z-index: 1;
+        font-size: 54pt;
+        color: white;
+    }
+    &__modal{
+        position: fixed;
+        z-index: 2;
+        left: 50%;
+        top: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        border: solid;
+        border-color: crimson;
+        border-width: 10px;
+    }
+}

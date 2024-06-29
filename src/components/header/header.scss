@@ -1,0 +1,36 @@
+$color1: crimson;
+$color2: white;
+.header{
+    background-color: $color1;
+    height: 100px;
+    width: 98vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__title{
+        font-weight: bold;
+        margin: 25px;
+    }
+    &__user{
+        font-weight: bold;
+        margin: 25px;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: row;
+
+    }
+    &__out{
+        align-self: center;
+        height: 50px;
+        width: 200px;
+        border-radius: 10px;
+        background-color: $color2;
+        font-weight: bold;
+        border: none;
+        font-size: 24pt;
+    }
+    &__name{
+        font-size: 24pt;
+        margin-left: 10px;
+    }
+}
