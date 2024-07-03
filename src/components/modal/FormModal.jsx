@@ -18,15 +18,15 @@ const FormModal = ({ModalState}) => {
         ModalState(false);
     }
     return(
-        <form className="modal" onSubmit={SubmitHandler}>
-            <div className="modal__container">
-                <button className="modal__exit" onClick={() => ModalState(false)}>X</button>
-                <fieldset className="modal__field">
-                    <label className="modal__label" htmlFor=""url>Enter image url</label>
-                    <textarea  className="modal__input" onChange={HandleChange} type="text" name="url" id="url" ></textarea>
+        <form className="modall" onSubmit={SubmitHandler}>
+            <div className="modall__container">
+                <button className="modall__exit" onClick={() => ModalState(false)}>X</button>
+                <fieldset className="modall__field">
+                    <label className="modall__label" htmlFor=""url>Enter image url</label>
+                    <textarea  className="modall__input" onChange={HandleChange} type="text" name="url" id="url" ></textarea>
                 </fieldset>
                 
-                <button className="modal__submit" type="submit">Pridėti</button>
+                <button className="modall__submit" type="submit">Pridėti</button>
             </div>
         </form>
     )

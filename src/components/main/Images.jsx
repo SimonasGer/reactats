@@ -7,10 +7,12 @@ import FormatModal from "../modal/FormatModal.jsx";
 import Image from "./Image";
 import * as service from "../../services/CrudServices";
 import "./images.scss";
+import 'bootstrap/dist/css/bootstrap.css';
 
 const Images = () => {
     const [modal, setModal] = useState(false);
     const [formatModal, setFormatModal] = useState(false);
+    const [style, setStyle] = useState([]);
     const navigate = useNavigate();
     
     const ModalHandler = (e) => {
@@ -35,21 +37,25 @@ const Images = () => {
             setImages(images)
         })
     },[])
+    let counter = 1;
+    console.log("stilius" , style);
     return (
-        <main className="main">
-            <button onClick={FormatHandler} className="main__format">Change format</button>
+        <main className="mainn">
+            <button onClick={FormatHandler} className="mainn__format">Change format</button>
             <div>
                 {modal && <FormModal ModalState = {setModal}/>}
             </div>
             <div>
-                {formatModal && <FormatModal ModalState = {setFormatModal}/>}
+                {formatModal && <FormatModal ModalState = {setFormatModal} style = {setStyle}/>}
             </div>
-            <section className="main__images">
+            <section className={style[1]}>
             {images?.map(image=><Image
                 url = {image.url}
+                format = {style}
+                c = {counter++}
             />)}
             </section>
-            <button className="main__plus" onClick={ModalHandler}>+</button>
+            <button className="mainn__plus" onClick={ModalHandler}>+</button>
         </main>
         
     )

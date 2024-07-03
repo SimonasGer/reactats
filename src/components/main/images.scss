@@ -1,15 +1,16 @@
-.main{
+.mainn{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     &__plus{
-        position: fixed;
+        position: fixed !important;
         font-size: 54pt;
-        width: 100px;
-        height: 100px;
+        width: 100px !important;
+        height: 100px !important;
         z-index: 1;
-        left: 50%;
-        top: 50%;
+        left: 50% !important;
+        top: 50% !important;
         margin-right: -50%;
         transform: translate(-50%, -50%);
         border-radius: 100%;
@@ -21,11 +22,15 @@
         background-color: crimson;
         color: white;
         border: none;
-        height: 100px;
-        width: 300px;
+        height: 100px !important;
+        width: 300px !important;
         border-radius: 10px;
-        margin: 50px;
-        font-size: 32pt;
-        align-self: center;
+        margin: 50px !important;
+        font-size: 24pt !important;
+        align-self: center !important;
+    }
+    &__images{
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
